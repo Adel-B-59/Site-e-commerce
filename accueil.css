@@ -9,7 +9,7 @@ body{
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url(./../page\ accueil.jpg);
+    background: url(./wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -112,3 +112,4 @@ color: #333;
     width: 40px;
     height: 40px;
 }
+

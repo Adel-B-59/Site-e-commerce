@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire/Se connecter</title>
+    <link rel="stylesheet" href="page login.css">
+
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--<title>Login & Signup Form</title>-->
+ 
+    <section class="wrapper">
+        <div class="form signup">
+          <header>S'inscrire</header>
+          <form action="#">
+            <input type="text" placeholder=" Pseudonyme" required />
+            <input type="text" placeholder=" Adresse mail " required />
+            <input type="password" placeholder="Mot de passe" required />
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" />
+              <label for="signupCheck">J'accepte les termes & conditions</label>
+            </div>
+            <input type="submit" value="S'inscrire" />
+          </form>
+        </div>
+  
+        <div class="form login">
+          <header>S'enregistrer</header>
+          <form action="#">
+            <input type="text" placeholder=" Adresse mail" required />
+            <input type="password" placeholder="Mot de passe" required />
+            <a href="#"> Mot de passe oublié ?</a>
+            <a href="page clients.html"> <button > S'enregistrer </a>
+          </form>
+        </div>
+  
+        <script>
+          const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup header"),
+            loginHeader = document.querySelector(".login header");
+  
+          loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+          });
+          signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+          });
+  
+          document.getElementById("button").addEventListener("click", function() {
+            document.querySelector(".wrapper").style.display = "flex";  
+          })
+        </script>
+      </section>
